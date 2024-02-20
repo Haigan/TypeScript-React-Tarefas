@@ -14,6 +14,7 @@ import { ITask } from "./Interfaces/Task";
 
 function App() {
   const [taskList, setTaskList] = useState<ITask[]>([]);
+
   const [taskToUpdate, setTaskToUpdate] = useState<ITask | null>(null);
 
   const deleteTask = (id: number) => {
